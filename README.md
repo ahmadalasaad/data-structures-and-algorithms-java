@@ -3,3 +3,4 @@
 | **class number** | **class name** |
 | ----------------- | ------------- |
 | 01 | [Reverse Array](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/reverseArray) |
+| 02 | [Array-Insert-Shift](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/arrayInsertShift) |
