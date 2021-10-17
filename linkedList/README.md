@@ -1,6 +1,19 @@
 # Singly Linked List
 <!-- Short summary or background information -->
+
 The LinkedList class is a collection which can contain many objects of the same type and has many methods so you can add items, change items, remove items and clear the list
+
+user have a Linked List and we want to create methods to :
+add item at the end of the list
+// input:  integer
+//output LinkedList
+give 2 value first one it's the value I want to add the value before it and the second one it's the value
+ //input: two integer value
+   //output LinkedList
+give 2 value first one it's the value I want to add the value after it and the second one it's the value
+ //input: two integer value
+ //output LinkedList
+
 ## Challenge
 <!-- Description of the challenge -->
 Make a Node class and linked list class that includes 3 methodes ansert, includes and toString
@@ -23,3 +36,9 @@ I started with make a node class then the linked list and finally test the code
 * insert that take an integer and add it to linked list
 * includes that take an integer and return boolean if it is in array return true if not false
 * toString that return a string contain all object value
+
+
+## white board
+
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/Untitled.jpg?raw=true)
+

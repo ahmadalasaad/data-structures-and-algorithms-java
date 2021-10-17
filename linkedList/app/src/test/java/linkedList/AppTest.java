@@ -69,4 +69,73 @@ class AppTest {
         String expectedValue="{ 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> NULL";
         assertEquals(expectedValue,testList.toString());
     }
+    @Test void testInappend(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.append(55);
+
+        String expectedValue="{ 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> { 55 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
+    @Test void testInMultiableAppend(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.append(55);
+        testList.append(77);
+
+        String expectedValue="{ 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> { 55 } -> { 77 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
+    @Test void testInAddBefore(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.insertBefor(4,100);
+        String expectedValue="{ 6 } -> { 5 } -> { 100 } -> { 4 } -> { 3 } -> { 2 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
+    @Test void testInAddBeforeFirstItem(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.insertBefor(6,100);
+        String expectedValue="{ 100 } -> { 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
+    @Test void testInAddAfterItem(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.insertAfter(6,100);
+        String expectedValue="{ 6 } -> { 100 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
+    @Test void testInAddAfterLastItem(){
+        LinkedList<Integer>testList=new LinkedList<Integer>();
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        testList.insertAfter(2,100);
+        String expectedValue="{ 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> { 100 } -> NULL";
+        assertEquals(expectedValue,testList.toString());
+    }
 }
