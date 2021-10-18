@@ -41,7 +41,7 @@ I started with make a node class then the linked list and finally test the code
 ## white board
 
 * this white boaard for class06
-![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/Untitled.jpg?raw=true)
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/Untitled (2).jpg?raw=true)
 
 * this white boaard for class07
   ![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/kht.jpg?raw=true)
