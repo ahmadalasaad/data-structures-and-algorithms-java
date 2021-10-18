@@ -28,7 +28,7 @@ I started with make a node class then the linked list and finally test the code
 | insert|O(1)|O(1)|
 | includes| O(n)|O(1)|
 | toString |O(n) |O(n)|
-
+|  kth | o(n) | O(1)
 
 
 ## API
@@ -40,5 +40,10 @@ I started with make a node class then the linked list and finally test the code
 
 ## white board
 
+* this white boaard for class06
 ![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/Untitled.jpg?raw=true)
+
+* this white boaard for class07
+  ![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList/kht.jpg?raw=true)
+
 
