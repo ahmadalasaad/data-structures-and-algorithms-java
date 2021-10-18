@@ -138,4 +138,49 @@ class AppTest {
         String expectedValue="{ 6 } -> { 5 } -> { 4 } -> { 3 } -> { 2 } -> { 100 } -> NULL";
         assertEquals(expectedValue,testList.toString());
     }
+    @Test void testIn_k_MoreThan(){
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(5);
+        listNumber.insert(3);
+        listNumber.insert(2);
+        listNumber.insert(8);
+        String expectedValue="Exception";
+     assertEquals( expectedValue,listNumber.kthFromEnd(20));
+
+    }
+    @Test void testIn_k_equalListLength(){
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(5);
+        listNumber.insert(3);
+        listNumber.insert(2);
+        listNumber.insert(8);
+        String expectedValue="Exception";
+        assertEquals( expectedValue,listNumber.kthFromEnd(4));
+
+    }
+    @Test void testIn_k_notPositiveNumber(){
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(5);
+
+        String expectedValue="Exception";
+        assertEquals( expectedValue,listNumber.kthFromEnd(-4));
+
+    }
+    @Test void testInListLengthEqualOne(){
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(5);
+        Integer expectedValue=5;
+        assertEquals( expectedValue,listNumber.kthFromEnd(0));
+
+    }
+    @Test void testIn_k_Middle(){
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(5);
+        listNumber.insert(3);
+        listNumber.insert(2);
+        listNumber.insert(8);
+        Integer expectedValue=2;
+        assertEquals( expectedValue,listNumber.kthFromEnd(2));
+
+    }
 }
