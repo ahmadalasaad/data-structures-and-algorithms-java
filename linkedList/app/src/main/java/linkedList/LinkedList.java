@@ -2,6 +2,27 @@ package linkedList;
 
 public class LinkedList<T>{
     Node head;
+
+    public T kthFromEnd(int k){
+        int i=0;
+        Node current=head;
+        while (current!=null){
+            i++;
+            current=current.next;
+        }
+        current=head;
+        int j=0;
+        while (current!=null){
+            if((i-j-1)==k) {
+            return (T)current.value;
+            }
+                current = current.next;
+                j++;
+            }
+        String ret="Exception";
+        return (T)ret;
+        }
+
     public void append(T value){
         Node newNode=new Node(value);
         Node current=head;
