@@ -7,17 +7,41 @@ public class App {
 
     public static void main(String[] args) {
         LinkedList<Integer> listNumber=new LinkedList<Integer>();
-        listNumber.insert(5);
-        listNumber.insert(3);
+        listNumber.insert(0);
+        listNumber.insert(1);
         listNumber.insert(2);
-        listNumber.insert(8);
-        listNumber.append(10);
-        listNumber.insertBefor(5,88);
-        listNumber.insertAfter(3,77);
+        listNumber.insert(10);
+//        listNumber.append(5);
+        LinkedList<Integer> listNumber1=new LinkedList<Integer>();
+        listNumber1.insert(3);
+        listNumber1.insert(4);
+        listNumber1.insert(5);
+//        listNumber1.insert(6);
+//        listNumber.insertBefor(5,88);
+//        listNumber.insertAfter(3,77);
 
-        System.out.println(listNumber.includes(5));
-        System.out.println(listNumber.toString());
-        System.out.println(listNumber.kthFromEnd(3));
+//        System.out.println(listNumber.includes(5));
 
+//        System.out.println(listNumber.toString());
+//
+//        System.out.println(listNumber.kthFromEnd(3));
+        System.out.println(zipLists(listNumber,listNumber1));
+    }
+
+        public static LinkedList<Integer> zipLists(LinkedList<Integer> list1,LinkedList<Integer> list2){
+            LinkedList<Integer> zipList = new LinkedList<Integer>();
+            Node current1= list1.head;
+            Node current2= list2.head;
+            while(current1!=null||current2!=null){
+                if(current1!=null) {
+                    zipList.append((Integer) current1.value);
+                    current1=current1.next;
+                }
+                if(current2!=null) {
+                    zipList.append((Integer) current2.value);
+                    current2=current2.next;
+                }
+            }
+            return zipList;
     }
 }

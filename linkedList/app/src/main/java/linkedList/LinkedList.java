@@ -3,6 +3,7 @@ package linkedList;
 public class LinkedList<T>{
     Node head;
 
+
     public T kthFromEnd(int k){
         int i=0;
         Node current=head;
@@ -26,6 +27,10 @@ public class LinkedList<T>{
     public void append(T value){
         Node newNode=new Node(value);
         Node current=head;
+        if(current==null){
+            insert(value);
+            return;
+        }
         while (current.next!=null){
                 current=current.next;
         }
