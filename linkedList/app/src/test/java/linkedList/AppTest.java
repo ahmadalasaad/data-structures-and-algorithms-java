@@ -183,4 +183,20 @@ class AppTest {
         assertEquals( expectedValue,listNumber.kthFromEnd(2));
 
     }
+    @Test void testInZipLists(){
+        App currentClassIntest=new App();
+        LinkedList<Integer> listNumber=new LinkedList<Integer>();
+        listNumber.insert(0);
+        listNumber.insert(1);
+        listNumber.insert(2);
+        listNumber.insert(10);
+        LinkedList<Integer> listNumber1=new LinkedList<Integer>();
+        listNumber1.insert(3);
+        listNumber1.insert(4);
+        listNumber1.insert(5);
+        String expectedValue="{ 10 } -> { 5 } -> { 2 } -> { 4 } -> { 1 } -> { 3 } -> { 0 } -> NULL";
+        String actualResults= currentClassIntest.zipLists(listNumber,listNumber1).toString();
+        assertEquals( expectedValue,actualResults);
+
+    }
 }
