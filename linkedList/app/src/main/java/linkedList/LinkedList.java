@@ -3,6 +3,15 @@ package linkedList;
 public class LinkedList<T>{
     Node head;
 
+    public T removeItemFromFirst(){
+        if(head==null){
+            String ret="The list is empty";
+            return (T) ret;
+        }
+        Node current=head;
+        head=head.next;
+        return (T) current.value;
+    }
 
     public T kthFromEnd(int k){
         int i=0;

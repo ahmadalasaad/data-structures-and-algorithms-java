@@ -22,11 +22,11 @@ public class App {
 
 
 //        System.out.println(listNumber.includes(5));
-
-//        System.out.println(listNumber.toString());
+        System.out.println(listNumber.removeItemFromFirst());
+        System.out.println(listNumber.toString());
 //
 //        System.out.println(listNumber.kthFromEnd(9));
-        System.out.println(zipLists(listNumber,listNumber1));
+//        System.out.println(zipLists(listNumber,listNumber1));
 //        System.out.println( reverseList(listNumber));
     }
 
