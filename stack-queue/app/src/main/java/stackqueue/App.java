@@ -6,6 +6,7 @@ package stackqueue;
 public class App {
 
     public static <T> void main(String[] args) {
+        /*--------------class10------------------*/
         Stack stack1=new Stack();
         stack1.push(10);
         stack1.push(5);
@@ -25,5 +26,25 @@ public class App {
         T returnedValueQueue=(T) queue1.dequeue();
         System.out.println(returnedValueQueue);
         System.out.println(queue1.toString());
+
+        /*------------------------------------------------------------------------------------------------*/
+        /*---------------------------------------------class11--------------------------------------------*/
+
+        PseudoQueue pseudoQueue1 =new PseudoQueue();
+        pseudoQueue1.enqueue(1);
+        pseudoQueue1.enqueue(2);
+        pseudoQueue1.enqueue(3);
+        pseudoQueue1.enqueue(4);
+        pseudoQueue1.dequeue();
+        pseudoQueue1.dequeue();
+//        pseudoQueue1.dequeue();
+//        pseudoQueue1.dequeue();
+//        pseudoQueue1.dequeue();
+
+        System.out.println(pseudoQueue1.toString());
+
+        /*------------------------------------------------------------------------------------------------*/
+
+
     }
 }

@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class AppTest {
+
+    /* challenge 10 */
    @Test void testInPushIntoStack() {
        Stack stack1=new Stack();
        stack1.push(9);
@@ -122,5 +124,41 @@ class AppTest {
         queue1.dequeue();
         String accpectedResult= "the stack already empty";
         assertEquals(accpectedResult,queue1.peek());
+    }
+    /*challenge 11*/
+    @Test void testInEnqueueIntoPseudoQueue() {
+        PseudoQueue pseudoQueue=new PseudoQueue();
+        pseudoQueue.enqueue(9);
+        String accpectedResult= "top-> { 9 } -> NULL";
+        assertEquals(accpectedResult,pseudoQueue.toString());
+    }
+    @Test void testInEnqueueMultipleToPseudoQueue() {
+        PseudoQueue pseudoQueue=new PseudoQueue();
+        pseudoQueue.enqueue(9);
+        pseudoQueue.enqueue(8);
+        pseudoQueue.enqueue(7);
+        String accpectedResult= "top-> { 7 } ->  { 8 } ->  { 9 } -> NULL";
+        assertEquals(accpectedResult,pseudoQueue.toString());
+    }
+    @Test void testInDequeueFromPseudoQueue() {
+        PseudoQueue pseudoQueue=new PseudoQueue();
+        pseudoQueue.enqueue(9);
+        pseudoQueue.enqueue(8);
+        pseudoQueue.enqueue(7);
+        pseudoQueue.dequeue();
+        String accpectedResult= "top-> { 7 } ->  { 8 } -> NULL";
+        assertEquals(accpectedResult,pseudoQueue.toString());
+    }
+    @Test void testInDequeueEmptyPseudoQueue() {
+        PseudoQueue pseudoQueue=new PseudoQueue();
+        pseudoQueue.enqueue(9);
+        pseudoQueue.enqueue(8);
+        pseudoQueue.enqueue(7);
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+        String accpectedResult= "top->NULL";
+        assertEquals(accpectedResult,pseudoQueue.toString());
     }
 }
