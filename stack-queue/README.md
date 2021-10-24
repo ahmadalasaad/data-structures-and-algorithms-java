@@ -33,8 +33,11 @@ Last In Last Out
 | pop| O(1)|O(1)|
 | isEmpty |O(1) |O(1)|
 | peek | o(1) | O(1)
-| enqueue | o(1) | O(1)
-| dequeue | o(1) | O(1)
+| enqueue queue | o(1) | O(1)
+| dequeue queue | o(1) | O(1)
+| enqueue Pseudodqueue | O(1) | O(1)
+| dequeue Pseudodqueue | o(n) | O(n)
+
 
 For all of them it's O(1) because there is no loops
 
@@ -52,3 +55,11 @@ enqueue:
 add node to the queue
 dequeue:
 remove node from queue
+enqueue pseudo:
+add node to the queue
+dequeue pseudo:
+remove node from queue
+
+# white board to challenge 11
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/pseudo.png?raw=true)
+
