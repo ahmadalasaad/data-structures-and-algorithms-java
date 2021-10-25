@@ -61,8 +61,8 @@ dequeue pseudo:
 remove node from queue
 
 # white board to challenge 11
-![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/pseudo.png?raw=true)
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/pseudo.jpg?raw=true)
 # white board to challenge 11
-![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/animal.png?raw=true)
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/animal.jpg?raw=true)
 
 
