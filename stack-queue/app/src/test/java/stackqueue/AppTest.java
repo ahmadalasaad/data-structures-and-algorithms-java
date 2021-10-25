@@ -161,4 +161,68 @@ class AppTest {
         String accpectedResult= "top->NULL";
         assertEquals(accpectedResult,pseudoQueue.toString());
     }
+    /*---------------class12-------------------------*/
+    @Test void testInEmptyAnimalshelter() {
+        String accpectedResult="already empty";
+        Animal dog1=new Dog("Spike");
+        Animal dog2=new Dog("Pop");
+        Animal dog3=new Dog("Rock");
+        Animal cat1=new Cat("semsem");
+        Animal cat2=new Cat("sokar");
+        AnimalShelter house=new AnimalShelter();
+        house.enqueue(dog1);
+        house.enqueue(dog2);
+        house.enqueue(dog3);
+        house.enqueue(cat1);
+        house.enqueue(cat2);
+        house.dequeue();
+        house.dequeue();
+        house.dequeue();
+        house.dequeue();
+        house.dequeue();
+        String acctualReasult= house.dequeue();
+
+        assertEquals(accpectedResult,acctualReasult);
+    }
+    @Test void testInAnimalshelter() {
+        String accpectedResult="dog";
+        Animal dog1=new Dog("Spike");
+        Animal dog2=new Dog("Pop");
+        Animal dog3=new Dog("Rock");
+        Animal cat1=new Cat("semsem");
+        Animal cat2=new Cat("sokar");
+        AnimalShelter house=new AnimalShelter();
+        house.enqueue(dog1);
+        house.enqueue(dog2);
+        house.enqueue(dog3);
+        house.enqueue(cat1);
+        house.enqueue(cat2);
+        house.dequeue();
+
+        String acctualReasult= house.dequeue();
+
+        assertEquals(accpectedResult,acctualReasult);
+    }
+    @Test void testInMultipleDequeueAndEnqueueInAnimalShelter() {
+        String accpectedResult="cat";
+        Animal dog1=new Dog("Spike");
+        Animal dog2=new Dog("Pop");
+        Animal dog3=new Dog("Rock");
+        Animal cat1=new Cat("semsem");
+        Animal cat2=new Cat("sokar");
+        AnimalShelter house=new AnimalShelter();
+        house.enqueue(dog1);
+        house.enqueue(dog2);
+        house.enqueue(dog3);
+        house.enqueue(cat1);
+        house.enqueue(cat2);
+        house.dequeue();
+        house.dequeue();
+        house.dequeue();
+        house.dequeue();
+        String acctualReasult= house.dequeue();
+
+        assertEquals(accpectedResult,acctualReasult);
+    }
 }
+
