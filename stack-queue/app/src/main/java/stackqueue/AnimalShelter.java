@@ -1,10 +1,17 @@
 package stackqueue;
 
+import java.util.RandomAccess;
+
 public  class AnimalShelter {
     private Queue Animals=new Queue();
 
     public void enqueue(Animal animal){
-            Animals.enqueue(animal);
+            if(animal instanceof Cat || animal instanceof Dog){
+            Animals.enqueue(animal);}else {
+                System.out.println("just accept cat or dogs");
+            }
+
+
     }
     public String dequeue(){
         Node pref=Animals.front;
