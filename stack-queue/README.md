@@ -62,7 +62,9 @@ remove node from queue
 
 # white board to challenge 11
 ![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/pseudo.jpg?raw=true)
-# white board to challenge 11
+# white board to challenge 12
 ![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/animal.jpg?raw=true)
+# white board to challenge 12
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue/validator.jpg?raw=true)
 
 
