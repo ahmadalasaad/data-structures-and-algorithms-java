@@ -3,6 +3,8 @@
  */
 package stackqueue;
 
+import java.lang.reflect.Array;
+
 public class App {
 
     public static <T> void main(String[] args) {
@@ -36,6 +38,7 @@ public class App {
         pseudoQueue1.enqueue(3);
         pseudoQueue1.enqueue(4);
         pseudoQueue1.dequeue();
+        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
@@ -61,5 +64,35 @@ public class App {
         System.out.println( house.dequeue());
 
         System.out.println(house.toString());
+
+        /*----------------------------------------------class13----------------------------------------------------------*/
+        System.out.println(validateBrackets("ahma{()}d"));
     }
+
+
+
+    static boolean validateBrackets(String input){
+        if(input==null)
+            return true;
+
+        Stack stack = new Stack();
+        for (int i = 0; i <input.length() ; i++) {
+            Character c = input.charAt(i);
+            if(c=='('){
+                stack.push(')');
+            }
+            if(c=='['){
+                stack.push(']');
+            }
+            if(c=='{'){
+                stack.push('}');
+            }else if (c==')' || c=='}' || c==']' ){
+                if(stack.isEmpty() || stack.pop()!=c)
+                    return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
 }
+

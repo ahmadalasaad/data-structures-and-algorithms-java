@@ -224,5 +224,28 @@ class AppTest {
 
         assertEquals(accpectedResult,acctualReasult);
     }
+    /*---------------class12-------------------------*/
+@Test
+    void testInValidatorTrue(){
+    App testApp= new App();
+    String str="()()([]({}))[]";
+
+    assertTrue(testApp.validateBrackets(str));
+}
+    @Test
+    void testInValidatorFalse(){
+        App testApp= new App();
+        String str="()()([]({)[]";
+
+        assertFalse(testApp.validateBrackets(str));
+    }
+    @Test
+    void testInValidatorEmpty(){
+        App testApp= new App();
+        String str="";
+
+        assertTrue(testApp.validateBrackets(str));
+    }
+
 }
 
