@@ -36,7 +36,6 @@ public class App {
         pseudoQueue1.enqueue(3);
         pseudoQueue1.enqueue(4);
         pseudoQueue1.dequeue();
-        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
