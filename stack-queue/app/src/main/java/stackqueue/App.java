@@ -3,9 +3,13 @@
  */
 package stackqueue;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+=======
+import java.lang.reflect.Array;
+>>>>>>> 8ab8d553aad7fd5fb2c7046596c72420f7b72252
 
 public class App {
 
@@ -40,6 +44,7 @@ public class App {
         pseudoQueue1.enqueue(3);
         pseudoQueue1.enqueue(4);
         pseudoQueue1.dequeue();
+        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
 //        pseudoQueue1.dequeue();
@@ -64,6 +69,7 @@ public class App {
         System.out.println( house.dequeue());
         System.out.println( house.dequeue());
         System.out.println(house.toString());
+<<<<<<< HEAD
 //        System.out.println( getMax(stack1));
     }
 //    public static Integer getMax(Stack stack){
@@ -77,4 +83,37 @@ public class App {
 //        }
 //        return max;
 //    }
+=======
+
+        /*----------------------------------------------class13----------------------------------------------------------*/
+        System.out.println(validateBrackets("ahma{()}d"));
+    }
+
+
+
+    static boolean validateBrackets(String input){
+        if(input==null)
+            return true;
+
+        Stack stack = new Stack();
+        for (int i = 0; i <input.length() ; i++) {
+            Character c = input.charAt(i);
+            if(c=='('){
+                stack.push(')');
+            }
+            if(c=='['){
+                stack.push(']');
+            }
+            if(c=='{'){
+                stack.push('}');
+            }else if (c==')' || c=='}' || c==']' ){
+                if(stack.isEmpty() || stack.pop()!=c)
+                    return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+>>>>>>> 8ab8d553aad7fd5fb2c7046596c72420f7b72252
 }
+

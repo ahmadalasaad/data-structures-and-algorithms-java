@@ -2,7 +2,6 @@ package stackqueue;
 
 public class PseudoQueue {
      Node top;
-//    private Stack stack=new Stack();
      public <T> void enqueue(T value){
          Node newNode=new Node(value);
          newNode.next=top;
