@@ -3,6 +3,10 @@
  */
 package stackqueue;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class App {
 
     public static <T> void main(String[] args) {
@@ -59,7 +63,18 @@ public class App {
         System.out.println( house.dequeue());
         System.out.println( house.dequeue());
         System.out.println( house.dequeue());
-
         System.out.println(house.toString());
+//        System.out.println( getMax(stack1));
     }
+//    public static Integer getMax(Stack stack){
+//        Node current=stack.top;
+//        Integer max=0;
+//        while (current!=null){
+//            if((int) current.value>max){
+//                max= (int)current.value;
+//            }
+//            current=current.next;
+//        }
+//        return max;
+//    }
 }
