@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+
+  /*-------------------------------challenge 15--------------------- */
   @Test
   void testInEmptyTree(){
   BinaryTree emptyTree=new BinaryTree();
@@ -71,4 +73,28 @@ class LibraryTest {
     expectedVlue.add(5);
     assertEquals(expectedVlue,singleNode.postOrder(singleNode.root));
   }
+  /*-------------------------------challenge 16--------------------- */
+  @Test
+void testInTreeGetMax(){
+    BinarySearchTree tree=new BinarySearchTree();
+    tree.insert(5);
+    tree.insert(2);
+    tree.insert(7);
+    Integer expectedVlue = 7;
+    assertEquals(expectedVlue,tree.getMax());
+  }
+  @Test
+  void testInTreeGetMaxEnpty(){
+    BinarySearchTree tree=new BinarySearchTree();
+    String expectedVlue = "the tree is empty";
+    assertEquals(expectedVlue,tree.getMax());
+  }
+  @Test
+  void testInOneItem(){
+    BinarySearchTree tree=new BinarySearchTree();
+    tree.insert(5);
+    Integer expectedVlue = 5;
+    assertEquals(expectedVlue,tree.getMax());
+  }
+
 }

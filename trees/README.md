@@ -47,3 +47,20 @@ Adds a new node with that value in the correct location in the binary search tre
 Contains
 Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
+
+# Challenge Summary 16 
+<!-- Description of the challenge -->
+Find the Maximum Value in a Binary Tree
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/trees/max.jpg?raw=true)
+
+## Approach & Efficiency
+
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Time   O(n)  because we iterate inside while loop
+space  O(1) because we didn't assign more than one in the same time
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+you can run the library and see the output from there
