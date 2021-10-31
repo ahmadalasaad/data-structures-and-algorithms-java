@@ -55,5 +55,25 @@ public class BinarySearchTree <T> extends BinaryTree{
         }
         return false;
     }
+
+
+
+    public T getMax(){
+        return findMax(root);
+    }
+
+    public T findMax(Node root){
+        Node temp =root;
+        while (temp!=null){
+            if (temp.right!=null){
+                temp=temp.right;
+            }else {
+                return (T) temp.value;
+            }
+        }
+        String str="the tree is empty";
+           return (T) str;
+}
+
 }
 
