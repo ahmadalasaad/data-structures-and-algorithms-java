@@ -3,6 +3,11 @@
  */
 package trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class Library {
     public static void main(String[] args) {
         BinarySearchTree test=new BinarySearchTree();
@@ -15,8 +20,25 @@ public class Library {
         test.insert(80);
 //        System.out.println(test.inOrder(test.root)+" inOrder");
 //        System.out.println(test.preOrder(test.root)+" preOrder");
-        System.out.println(test.postOrder(test.root)+" postOrder");
+//        System.out.println(test.postOrder(test.root)+" postOrder");
         System.out.println(test.contains(50));
         System.out.println(test.getMax());
+        System.out.println(breadthFirst(test));
+    }
+    /*---------------challenge 17----------------*/
+    public static ArrayList   breadthFirst(BinarySearchTree tree) {
+        Queue<Node> breadth = new LinkedList<>();
+        ArrayList treeList=new ArrayList();
+        breadth.add(tree.root);
+        while (breadth.peek() != null) {
+            Node front = breadth.remove();
+            treeList.add(front.value);
+            if (front.left != null)
+                breadth.add(front.left);
+            if (front.right != null)
+                breadth.add(front.right);
+        }
+
+        return treeList;
     }
 }
