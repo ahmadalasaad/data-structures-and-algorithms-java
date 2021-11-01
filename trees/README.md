@@ -64,3 +64,20 @@ space  O(1) because we didn't assign more than one in the same time
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 you can run the library and see the output from there
+
+# Challenge Summary
+<!-- Description of the challenge -->
+Write a function called breadth first
+Arguments: tree
+Return: list of all values in the tree, in the order they were encountered
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![white board](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/trees/bre.jpg?raw=true)
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+explaind in white board
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+you can run the library and see the output from there
