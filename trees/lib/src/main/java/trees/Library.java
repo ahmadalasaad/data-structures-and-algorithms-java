@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
 public class Library {
     public static void main(String[] args) {
         BinarySearchTree test=new BinarySearchTree();
@@ -21,9 +20,11 @@ public class Library {
 //        System.out.println(test.inOrder(test.root)+" inOrder");
 //        System.out.println(test.preOrder(test.root)+" preOrder");
 //        System.out.println(test.postOrder(test.root)+" postOrder");
-        System.out.println(test.contains(50));
-        System.out.println(test.getMax());
-        System.out.println(breadthFirst(test));
+//        System.out.println(test.contains(50));
+//        System.out.println(test.getMax());
+//        System.out.println(breadthFirst(test));
+        System.out.println(FizzBuzzTree.fizzBuzzTree(test));
+
     }
     /*---------------challenge 17----------------*/
     public static ArrayList   breadthFirst(BinarySearchTree tree) {
