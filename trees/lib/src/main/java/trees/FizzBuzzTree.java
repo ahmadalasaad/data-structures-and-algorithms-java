@@ -1,6 +1,10 @@
 package trees;
 
-public class FizzBuzzTree extends BinaryTree {
+import java.util.ArrayList;
+
+public class FizzBuzzTree  {
+
+
     private static void recursion(Node current) {
         if (current != null) {
             recursion(current.left);
@@ -9,7 +13,7 @@ public class FizzBuzzTree extends BinaryTree {
         }
     }
 
-    private static void changer(Node<Object> current) {
+    private static void changer(Node current) {
         if ((Integer)current.value % 15 == 0) {
             current.value="FizzBuzz";
         } else if ((Integer)current.value % 5 == 0) {
@@ -17,9 +21,10 @@ public class FizzBuzzTree extends BinaryTree {
         } else if ((Integer)current.value % 3 == 0) {
             current.value="Fizz";
         }
+        System.out.println(current.value);
     }
 
-        public static BinaryTree fizzBuzzTree(BinaryTree tree) {
+    public static BinaryTree fizzBuzzTree(BinaryTree tree) {
         recursion(tree.root);
         return tree;
     }
