@@ -123,7 +123,7 @@ void testInTreeGetMax(){
 
   ArrayList acctualResult=crrentLibrary.breadthFirst(test);
 
-  assertEquals(acctualResult,acctualResult);
+  assertEquals(accpectedResult,acctualResult);
 
 }
 
@@ -135,7 +135,7 @@ void testInTreeGetMax(){
 
     ArrayList acctualResult=crrentLibrary.breadthFirst(test);
 
-    assertEquals(acctualResult,acctualResult);
+    assertEquals(accpectedResult,acctualResult);
 
   }
 
@@ -149,7 +149,7 @@ void testInTreeGetMax(){
 
     ArrayList acctualResult=crrentLibrary.breadthFirst(test);
 
-    assertEquals(acctualResult,acctualResult);
+    assertEquals(accpectedResult,acctualResult);
 
   }
 /*--------------------------ch18----------------------------*/
