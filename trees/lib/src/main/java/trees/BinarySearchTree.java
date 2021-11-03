@@ -75,5 +75,17 @@ public class BinarySearchTree <T> extends BinaryTree{
            return (T) str;
 }
 
+    private static int getLeafCount(Node node)
+    {
+        if (node == null)
+            return 0;
+        if (node.left == null && node.right == null)
+            return 1;
+        else
+            return getLeafCount(node.left) + getLeafCount(node.right);
+    }
+    public static boolean leafCompare(Node root1,Node root2){
+        return getLeafCount(root1)==getLeafCount(root2);
+    }
 }
 

@@ -17,13 +17,23 @@ public class Library {
         test.insert(70);
         test.insert(60);
         test.insert(80);
+        BinarySearchTree test2=new BinarySearchTree();
+        test2.insert(50);
+        test2.insert(30);
+        test2.insert(20);
+        test2.insert(40);
+        test2.insert(70);
+        test2.insert(60);
+        test2.insert(80);
+
+
 //        System.out.println(test.inOrder(test.root)+" inOrder");
 //        System.out.println(test.preOrder(test.root)+" preOrder");
 //        System.out.println(test.postOrder(test.root)+" postOrder");
 //        System.out.println(test.contains(50));
 //        System.out.println(test.getMax());
 //        System.out.println(breadthFirst(test));
-        System.out.println(FizzBuzzTree.fizzBuzzTree(test));
+        System.out.println(BinarySearchTree.leafCompare(test.root, test2.root));
 
     }
     /*---------------challenge 17----------------*/
