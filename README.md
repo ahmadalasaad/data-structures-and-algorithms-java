@@ -8,4 +8,5 @@
 | 04 | [linked list](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/linkedList) |
 | 05 | [stack-queue](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/stack-queue) |
 | 06 | [trees](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/trees) |
+| 06 | [sort](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/sort) |
 
