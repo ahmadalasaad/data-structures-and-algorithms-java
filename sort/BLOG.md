@@ -1,5 +1,5 @@
 Blog
-
+##ch26
 ## Insertion Sort
 
 Using insertion sort, sorts array items from least to biggest number.
@@ -48,3 +48,37 @@ The second pass will swap the 16 and the 25.
 Pass 5
 
 The second pass will swap the 16 and the 30.
+
+
+##ch27
+
+### Trace
+Sample Array: [8,4,23,42,16,15]
+Pass 1
+
+First will pass through the array, and then split the array in two.
+
+Pass 2
+
+The array is split into two seperate arrays.
+
+Pass 3
+
+The two arrays will split again.
+
+Pass 4
+
+The left side will be sorted.
+
+Pass 5
+
+The right side will be sorted
+
+Pass 6
+
+Both sides will merge once the sorting is done.
+
+Pass 7
+
+Final iteration will the finished merged array.
+

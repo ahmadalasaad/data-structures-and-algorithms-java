@@ -8,9 +8,9 @@ import java.util.Arrays;
 
 public class Library {
     public static void main(String[] args) {
-    int[] arr={8,4,23,42,16,15};
+    int[] arr={2,3,5,7,13,11};
     Sort sort =new Sort();
-        System.out.println(Arrays.toString( sort.insertionSort(arr)));
+        System.out.println(Arrays.toString( sort.mergeSort(arr)));
 
     }
 }
