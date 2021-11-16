@@ -1,7 +1,7 @@
 package sort;
 
 import java.util.Arrays;
-
+/*ch26*/
 public class Sort {
     public int[] insertionSort(int[] arr) {
         if (arr.length > 1) {
@@ -18,6 +18,8 @@ public class Sort {
 
         return arr;
     }
+
+    /*ch27*/
     public int[] mergeSort(int[] arr) {
 
         if (arr.length > 1) {
@@ -66,4 +68,39 @@ public class Sort {
             }
         }
     }
+
+    /*ch28*/
+    public int[] quicksort(int[] arr, int left, int right) {
+        if (left < right) {
+            int partitionIndex = partition(arr, left, right);
+            quicksort(arr, left, partitionIndex - 1);
+            quicksort(arr, partitionIndex + 1, right);
+        }
+        return arr;
+    }
+
+    private int partition(int[] arr, int left, int right) {
+        int pivot = arr[right];
+
+        int low = left - 1;
+
+        for (int i = left; i < right; i++) {
+            if (arr[i]<=pivot) {
+                low++;
+                swap(arr, i, low);
+            }
+        }
+
+        swap(arr, right, low + 1);
+
+        return low + 1;
+    }
+
+    private void swap(int[] arr, int i, int low) {
+        int temp = arr[i];
+        arr[i] = arr[low];
+        arr[low] = temp;
+    }
+
 }
+

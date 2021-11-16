@@ -10,7 +10,7 @@ public class Library {
     public static void main(String[] args) {
     int[] arr={2,3,5,7,13,11};
     Sort sort =new Sort();
-        System.out.println(Arrays.toString( sort.mergeSort(arr)));
+        System.out.println(Arrays.toString( sort.quicksort(arr,0,arr.length-1)));
 
     }
 }
