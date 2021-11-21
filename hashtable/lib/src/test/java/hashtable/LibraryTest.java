@@ -16,7 +16,7 @@ class LibraryTest {
         test.add("ahmad3",3);
         test.add("ahmad4",4);
     }
-
+/*ch30*/
     @Test
     public void addAssertTest(){
         test.add("ahmad5",5);
@@ -50,5 +50,19 @@ class LibraryTest {
         test.add("ahmad2",2);
 
         assertEquals(2,test.getSize());
+    }
+    /*ch31*/
+    @Test
+    public void repeatedWordTest(){
+        String input = "hello from the other side, hello it's me";
+        String expected = test.firstRepeated(input);
+        assertEquals("hello", expected);
+    }
+
+    @Test
+    public void repeatedWordFailedTest(){
+        String input = "hello from the other side";
+        String expected = test.firstRepeated(input);
+        assertNotEquals("hello", expected);
     }
 }

@@ -12,6 +12,7 @@ public class Library {
         first.add("l","mona");
         first.add("s","mona");
         first.add("d","mona");
+        System.out.println(first.firstRepeated("hello from the other hello side"));
         System.out.println(first.contain("k"));
         System.out.println(first.getSize());
     }
