@@ -1,5 +1,7 @@
 package hashtable;
 
+import tree.BinaryTree;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -126,5 +128,21 @@ public class HashTable<k, v> {
         }
         return  "No repetition";
     }
+/*ch32*/
+public List<Integer> repeatedNodes(BinaryTree firstTree, BinaryTree secondTree){
+    List<Integer> list1= firstTree.inOrder(firstTree.root);
+    List<Integer> list2= secondTree.inOrder(secondTree.root);
 
+    List<Integer> list3 = new ArrayList<>();
+
+    for (int i = 0; i < list1.size(); i++) {
+        for (int j = 0; j < list2.size(); j++) {
+            if (list1.get(i).equals(list2.get(j))) {
+                list3.add(list1.get(i));
+            }
+        }
+    }
+    return list3;
+
+}
     }

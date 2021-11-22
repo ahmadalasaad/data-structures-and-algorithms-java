@@ -4,6 +4,11 @@
 package hashtable;
 
 import org.junit.jupiter.api.Test;
+import tree.BinarySearchTree;
+import tree.Node;
+
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -64,5 +69,48 @@ class LibraryTest {
         String input = "hello from the other side";
         String expected = test.firstRepeated(input);
         assertNotEquals("hello", expected);
+    }
+    /*ch32*/
+    @Test
+    public void repeatedNodeTest(){
+        BinarySearchTree binaryTree1= new BinarySearchTree();
+
+        binaryTree1.root =new Node(300);
+        binaryTree1.root.left=new Node(2);
+        binaryTree1.root.right=new Node(3);
+        binaryTree1.root.left.left=new Node(50);
+
+        BinarySearchTree binaryTree2= new BinarySearchTree();
+
+        binaryTree2.root=new Node(1);
+        binaryTree2.root.left=new Node(300);
+        binaryTree2.root.right=new Node(7);
+        binaryTree2.root.left.left=new Node(90);
+        binaryTree2.root.left.right=new Node(8);
+        ArrayList accpected=new ArrayList();
+        accpected.add(300);
+        assertEquals(accpected,test.repeatedNodes(binaryTree1,binaryTree2));
+    }
+
+    @Test
+    public void repeatedNodeFailedTest(){
+        BinarySearchTree binaryTree1= new BinarySearchTree();
+
+        binaryTree1.root=new Node(300);
+        binaryTree1.root.left=new Node(2);
+        binaryTree1.root.right=new Node(3);
+        binaryTree1.root.left.left=new Node(50);
+
+        BinarySearchTree binaryTree2= new BinarySearchTree();
+
+        binaryTree2.root=new Node(1);
+        binaryTree2.root.left=new Node(300);
+        binaryTree2.root.right=new Node(7);
+        binaryTree2.root.left.right=new Node(90);
+        binaryTree2.root.left.right=new Node(8);
+        ArrayList accpected=new ArrayList();
+        accpected.add(20);
+        assertNotEquals(accpected, test.repeatedNodes(binaryTree1,binaryTree2));
+
     }
 }

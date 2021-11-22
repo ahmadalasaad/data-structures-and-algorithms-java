@@ -52,3 +52,21 @@ The idea is to splite the string and store each word and its count in hashmap. T
 Time Complexity:  O(n^2): two for loop
 
 Space Complexity:  O(n)
+
+## Challenge 32
+Find all values found to be in 2 binary trees
+Write a function called tree intersection
+- Arguments: two binary trees
+- Return: array
+
+
+## Whiteboard Process
+![wb](./ch32.png)
+
+## Approach & Efficiency
+Check all the nodes in each tree, if the value of the node in the first tree has the same value 
+of the second tree, would add in the third tree.
+
+Time Complexity:  O(n^2)
+
+Space Complexity:  O(n)

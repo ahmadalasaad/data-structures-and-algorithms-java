@@ -3,6 +3,9 @@
  */
 package hashtable;
 
+import tree.BinarySearchTree;
+import tree.BinaryTree;
+
 public class Library {
     public static void main(String[] args) {
         HashTable<String, String> first = new HashTable<>();
@@ -15,5 +18,26 @@ public class Library {
         System.out.println(first.firstRepeated("hello from the other hello side"));
         System.out.println(first.contain("k"));
         System.out.println(first.getSize());
+        BinarySearchTree binaryTree1=  new BinarySearchTree();
+        binaryTree1.insert(300);
+        binaryTree1.insert(2);
+        binaryTree1.insert(3);
+        binaryTree1.insert(50);
+        binaryTree1.insert(200);
+        binaryTree1.insert(150);
+        binaryTree1.insert(90);
+
+        BinarySearchTree binaryTree2=  new BinarySearchTree();
+        binaryTree2.insert(1);
+        binaryTree2.insert(0);
+        binaryTree2.insert(7);
+        binaryTree2.insert(90);
+        binaryTree2.insert(8);
+        binaryTree2.insert(15);
+        binaryTree2.insert(200);
+        System.out.println(first.repeatedNodes(binaryTree1,binaryTree2));
+
     }
+
+
 }
