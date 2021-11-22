@@ -3,31 +3,31 @@
  */
 package linkedList;
 
-public class App {
+public class App<T> {
 
     public static void main(String[] args) {
         LinkedList<Integer> listNumber=new LinkedList<Integer>();
-        listNumber.insert(0);
-        listNumber.insert(1);
+        listNumber.insert(3);
+        listNumber.insert(4);
         listNumber.insert(2);
-        listNumber.insert(10);
-        listNumber.append(5);
+//        listNumber.insert(10);
+//        listNumber.append(5);
         LinkedList<Integer> listNumber1=new LinkedList<Integer>();
-        listNumber1.insert(3);
         listNumber1.insert(4);
-        listNumber1.insert(5);
         listNumber1.insert(6);
+        listNumber1.insert(5);
+//        listNumber1.insert(6);
 //        listNumber.insertBefor(5,88);
 //        listNumber.insertAfter(2,77);
 
 
 //        System.out.println(listNumber.includes(5));
-        System.out.println(listNumber.removeItemFromFirst());
-        System.out.println(listNumber.toString());
+//        System.out.println(listNumber.removeItemFromFirst());
+//        System.out.println(listNumber.toString());
 //
 //        System.out.println(listNumber.kthFromEnd(9));
 //        System.out.println(zipLists(listNumber,listNumber1));
-//        System.out.println( reverseList(listNumber));
+//        System.out.println( reverse(listNumber));
     }
 
         public static LinkedList<Integer> zipLists(LinkedList<Integer> list1,LinkedList<Integer> list2){
@@ -46,15 +46,16 @@ public class App {
             }
             return zipList;
     }
-    public static LinkedList<Integer> reverseList(LinkedList<Integer> list){
-    LinkedList<Integer> reversedList=new LinkedList<>();
-        Node current= list.head;
-        int i=0;
-        while(current!=null){
-            reversedList.append(list.kthFromEnd(i));
-            i++;
-            current=current.next;
-        }
-    return reversedList;
-    }
+//    public static LinkedList<Integer> reverseList(LinkedList<Integer> list){
+//    LinkedList<Integer> reversedList=new LinkedList<>();
+//        Node current= list.head;
+//        int i=0;
+//        while(current!=null){
+//            reversedList.append(list.kthFromEnd(i));
+//            i++;
+//            current=current.next;
+//        }
+//    return reversedList;
+//    }
+
 }
