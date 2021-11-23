@@ -145,4 +145,29 @@ public List<Integer> repeatedNodes(BinaryTree firstTree, BinaryTree secondTree){
     return list3;
 
 }
+/*ch33*/
+
+
+    public List<k> keys(){
+        List<k> keys = new ArrayList<>();
+        for (HashNode<k, v> bucket: bucketArray){
+            if(bucket != null) {
+                keys.add(bucket.key);
+            }
+        }
+        return keys;
     }
+    public List<List<k>> leftJoin (HashTable<k, v> first, HashTable<k, v> second){
+        List<List<k>> list = new ArrayList<>();
+
+        for (k key : first.keys()){
+            List<k> list1 = new ArrayList<>();
+            list1.add(key);
+            list1.add((k) first.get(key));
+            list1.add((k) second.get(key));
+            list.add(list1);
+
+        }
+        return list;
+    }
+}

@@ -113,4 +113,36 @@ class LibraryTest {
         assertNotEquals(accpected, test.repeatedNodes(binaryTree1,binaryTree2));
 
     }
-}
+    @Test
+
+    public void leftJoinTest(){
+        HashTable<String, String> first = new HashTable<>();
+        HashTable<String, String> second = new HashTable<>();
+
+        first.add("fond","enamored");
+        first.add("wrath","anger");
+        first.add("guide","usher");
+
+        second.add("fond","averse");
+        second.add("wrath","delight");
+        second.add("guide","follow");
+
+        assertEquals("[[fond, enamored, averse], [wrath, anger, delight], [guide, usher, follow]]", test1.leftJoin(first,second).toString());
+    }
+
+    @Test
+    public void leftJoinFailedTest(){
+        HashTable<String, String> first = new HashTable<>();
+        HashTable<String, String> second = new HashTable<>();
+
+        first.add("fond","enamored");
+        first.add("wrath","anger");
+        first.add("guide","usher");
+
+        second.add("fond","averse");
+        second.add("wrath","delight");
+        second.add("guide","follow");
+
+        assertNotEquals("[[fond, averse], [anger, delight], [guide, usher,]]", test1.leftJoin(first,second).toString());
+
+    }}
