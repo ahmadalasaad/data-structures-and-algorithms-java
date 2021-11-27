@@ -10,4 +10,5 @@
 | 06 | [trees](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/trees) |
 | 07 | [sort](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/sort) |
 | 08 | [hashTable](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/hashtable) |
+| 09 | [graph](https://ahmadalasaad.github.io/data-structures-and-algorithms-java/graph) |
 
