@@ -52,12 +52,38 @@ Write the following method for the Graph class:
 * Display the collection
 
 ## Whiteboard Process
-![cc36](Graph.jpg)
+![cc36](./Graph.jpg)
 
 ## Approach & Efficiency
 
 Traversing starts from a selected node (root) and traverse the graph exploring the neighbour nodes (connected to root).
 Moving towards the next-level neighbour nodes.
+
+Big (O)
+
+Time Complexity : O(n+e)
+space Complexity : O(n)
+
+# Challenge 37
+Write a function called business trip:
+
+* Arguments: graph, array of city names
+* Return: cost or null
+* Determine whether the trip is possible with direct flights, and how much it would cost.
+
+## Whiteboard Process
+![cc37](./business.jpg)
+
+## Approach & Efficiency
+A Graph is called weighted graph when it has weighted edges which means there are some cost associated with each edge in graph.
+
+Implementation:
+
+Each edge of a graph has an associated numerical value, called a weight.
+Usually, the edge weights are nonnegative integers.
+Weighted graphs may be either directed or undirected.
+The weight of an edge is often referred to as the “cost” of the edge.
+Will create an Edge class to put weight on each edge
 
 Big (O)
 
