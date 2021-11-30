@@ -53,18 +53,6 @@ class LibraryTest {
     }
 
     @Test
-    public void  dft(){
-        Graph graph = new Graph();
-
-        graph.addVetrex("Bob");
-        graph.addVetrex("Mary");
-        graph.addVetrex("Alice");
-        graph.addVetrex("Carl");
-        graph.printGraph();
-        assertNotEquals("[Alice, Carl, Bob, Mary]", graph.dft(graph, "Alice").toString());
-    }
-
-    @Test
     public void  bft(){
         Graph graph = new Graph();
 
@@ -109,4 +97,19 @@ class LibraryTest {
         assertEquals("Vertex{label='Bob'}[Vertex{label='Mary'}]Vertex{label='Carl'}[Vertex{label='Alice'}]Vertex{label='Alice'}[Vertex{label='Carl'}]Vertex{label='Mary'}[Vertex{label='Bob'}]", graph.printGraph());
 
     }
+
+    @Test
+    public void  dft(){
+        Graph graph = new Graph();
+
+        graph.addVetrex("Bob");
+        graph.addVetrex("Mary");
+        graph.addVetrex("Alice");
+        graph.addVetrex("Carl");
+        graph.printGraph();
+        assertNotEquals("[Alice, Carl, Bob, Mary]", graph.dft(graph, "Alice").toString());
+    }
+
+
+
 }
